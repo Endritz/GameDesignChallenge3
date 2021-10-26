@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Event sheet 1</name>
+    <events>
+        <variable constant="0" name="Tagged" sid="271715826558481" static="0" type="number">0</variable>
+        <event-group description="" sid="856173598545321" title="Player 2 Control">
+            <sub-events>
+                <event-block sid="826594465211682">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="141106161498092" type="Keyboard">
+                            <param id="0" name="Key">65</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="608115360987944" type="Player1">
+                            <param id="0" name="Control">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="244350012401716">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="426511304075474" type="Keyboard">
+                            <param id="0" name="Key">87</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="372932424454930" type="Player1">
+                            <param id="0" name="Control">2</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="167207907017289">
+                    <conditions>
+                        <condition id="2" name="Key is down" sid="390431805506952" type="Keyboard">
+                            <param id="0" name="Key">68</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action behavior="Platform" id="7" name="Simulate control" sid="453850256990367" type="Player1">
+                            <param id="0" name="Control">1</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-group description="" sid="238421620610607" title="Camera Control">
+            <sub-events>
+                <event-block sid="127610187590106">
+                    <conditions>
+                        <condition id="-1" name="Every tick" sid="977386763066349" type="System" />
+                    </conditions>
+                    <actions />
+                </event-block>
+            </sub-events>
+        </event-group>
+        <event-block sid="149327350457680">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="501363964723870" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Play" sid="704988759910329" type="Audio">
+                    <param id="0" name="Audio file">GourmetRace - Copy</param>
+                    <param id="2" name="Loop">1</param>
+                    <param id="3" name="Volume">0</param>
+                    <param id="1" name="Tag (optional)">&quot;&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>
