@@ -1,0 +1,321 @@
+{
+	"name": "Event sheet 1",
+	"events": [
+		{
+			"eventType": "variable",
+			"name": "DistanceBetweenPlayers",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 819134684839822
+		},
+		{
+			"eventType": "variable",
+			"name": "Tagged",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 271715826558481
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player 2 Control",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 141106161498092,
+							"parameters": {
+								"key": 65
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player1",
+							"sid": 608115360987944,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "left"
+							}
+						}
+					],
+					"sid": 826594465211682
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 426511304075474,
+							"parameters": {
+								"key": 87
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player1",
+							"sid": 372932424454930,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "jump"
+							}
+						}
+					],
+					"sid": 244350012401716
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "key-is-down",
+							"objectClass": "Keyboard",
+							"sid": 390431805506952,
+							"parameters": {
+								"key": 68
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "simulate-control",
+							"objectClass": "Player1",
+							"sid": 453850256990367,
+							"behaviorType": "Platform",
+							"parameters": {
+								"control": "right"
+							}
+						}
+					],
+					"sid": 167207907017289
+				}
+			],
+			"sid": 856173598545321
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Camera Control",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 238421620610607
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 501363964723870
+				}
+			],
+			"actions": [
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 704988759910329,
+					"parameters": {
+						"audio-file": "GourmetRace - Copy",
+						"loop": "looping",
+						"volume": "0",
+						"tag-optional": "\"\""
+					}
+				}
+			],
+			"sid": 149327350457680
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 679631576633857
+				}
+			],
+			"actions": [
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 913856742477927,
+					"parameters": {
+						"variable": "DistanceBetweenPlayers",
+						"value": "abs(Player1.X - Player2.X)"
+					}
+				}
+			],
+			"sid": 502381004679326
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 315511852982360
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 949985142713461,
+					"parameters": {
+						"first-value": "DistanceBetweenPlayers",
+						"comparison": 2,
+						"second-value": "1900"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 938555173173591,
+					"parameters": {
+						"scale": "1/3"
+					}
+				}
+			],
+			"sid": 997263188849646
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 345713767394272
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 479763421956154,
+					"parameters": {
+						"first-value": "DistanceBetweenPlayers",
+						"comparison": 2,
+						"second-value": "1000"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 242645405031647,
+					"parameters": {
+						"scale": "1/2"
+					}
+				}
+			],
+			"sid": 736239320186165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 312168129564655
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 445558298321520,
+					"parameters": {
+						"first-value": "DistanceBetweenPlayers",
+						"comparison": 2,
+						"second-value": "700"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 359748142948720,
+					"parameters": {
+						"scale": "3/4"
+					}
+				}
+			],
+			"sid": 947220576748469
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 735623428363014
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 386362843005739,
+					"parameters": {
+						"first-value": "DistanceBetweenPlayers",
+						"comparison": 2,
+						"second-value": "400"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 549956367373324,
+					"parameters": {
+						"scale": "4/5"
+					}
+				}
+			],
+			"sid": 159819582894004
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 277924559835993
+				},
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 128956115589707,
+					"parameters": {
+						"first-value": "DistanceBetweenPlayers",
+						"comparison": 2,
+						"second-value": "200"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layout-scale",
+					"objectClass": "System",
+					"sid": 675058318897849,
+					"parameters": {
+						"scale": "1"
+					}
+				}
+			],
+			"sid": 481469103441775
+		}
+	],
+	"sid": 764309225960778
+}
