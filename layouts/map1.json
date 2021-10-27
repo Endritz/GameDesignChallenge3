@@ -82,8 +82,8 @@
 						"y": 256,
 						"width": 32,
 						"height": 32,
-						"originX": 0.03125,
-						"originY": 0.96875,
+						"originX": 0.46875,
+						"originY": -0.1875,
 						"color": [
 							1,
 							1,
@@ -142,8 +142,8 @@
 						"y": 160,
 						"width": 32,
 						"height": 32,
-						"originX": 0.0555556,
-						"originY": 0.944444,
+						"originX": 0.4722222222222222,
+						"originY": -0.19444444444444445,
 						"color": [
 							1,
 							1,
@@ -12888,8 +12888,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 322,
-						"y": 176,
+						"x": 282,
+						"y": 202,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -12973,6 +12973,48 @@
 							1,
 							1,
 							0.8
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player2_Score",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.9647058823529412,
+							0.09019607843137255,
+							0.03137254901960784,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 575,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1529,
+						"y": 105,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
 						],
 						"angle": 0,
 						"zElevation": 0

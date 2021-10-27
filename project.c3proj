@@ -103,7 +103,8 @@
 			"StartButton",
 			"Sprite",
 			"Player1_Score",
-			"Timer"
+			"Timer",
+			"Player2_Score"
 		],
 		"subfolders": []
 	},
