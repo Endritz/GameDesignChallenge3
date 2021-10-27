@@ -151,9 +151,9 @@
 			"Title",
 			"Map1",
 			"Map2",
+			"Map3",
 			"Post Game",
-			"Choose Map",
-			"Map3"
+			"Choose Map"
 		],
 		"subfolders": []
 	},
@@ -161,7 +161,8 @@
 		"items": [
 			"Event sheet 1",
 			"Event sheet 2",
-			"Title Event Sheet"
+			"Title Event Sheet",
+			"Choose Event Sheet"
 		],
 		"subfolders": []
 	},

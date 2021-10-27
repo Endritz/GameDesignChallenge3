@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "Countdown",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -175,9 +175,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "Timer",
-							"sid": 705337145590099,
+							"sid": 106653234972075,
 							"parameters": {
-								"text": "Countdown"
+								"text": "Countdown -1"
 							}
 						}
 					],
@@ -345,7 +345,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 539911761239857,
+					"sid": 926905948692642,
 					"parameters": {
 						"seconds": "3"
 					}
@@ -380,10 +380,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 258991408558817,
+					"sid": 417139539861749,
 					"parameters": {
 						"variable": "Countdown",
-						"value": "300"
+						"value": "301"
 					}
 				}
 			],
@@ -508,7 +508,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 110880993134502,
+					"sid": 414390671461789,
 					"parameters": {
 						"variable": "Countdown",
 						"comparison": 4,
@@ -517,7 +517,7 @@
 				}
 			],
 			"actions": [],
-			"sid": 104313346254401,
+			"sid": 404910078696123,
 			"children": [
 				{
 					"eventType": "block",
@@ -525,7 +525,7 @@
 						{
 							"id": "every-x-seconds",
 							"objectClass": "System",
-							"sid": 781404008944844,
+							"sid": 903689215929003,
 							"parameters": {
 								"interval-seconds": "1"
 							}
@@ -535,7 +535,7 @@
 						{
 							"id": "subtract-from-eventvar",
 							"objectClass": "System",
-							"sid": 943142470006020,
+							"sid": 761452861681874,
 							"parameters": {
 								"variable": "Countdown",
 								"value": "1"
@@ -544,7 +544,7 @@
 						{
 							"id": "add-to-eventvar",
 							"objectClass": "System",
-							"sid": 558471092340740,
+							"sid": 862385537696969,
 							"parameters": {
 								"variable": "Player2_Score",
 								"value": "1"
@@ -553,13 +553,13 @@
 						{
 							"id": "set-text",
 							"objectClass": "Player2_Score",
-							"sid": 989388888450903,
+							"sid": 843659167910144,
 							"parameters": {
 								"text": "Player2_Score"
 							}
 						}
 					],
-					"sid": 581558776899017
+					"sid": 999888677410514
 				}
 			]
 		},
@@ -569,25 +569,25 @@
 				{
 					"id": "else",
 					"objectClass": "System",
-					"sid": 369365068221747
+					"sid": 846782260478989
 				}
 			],
 			"actions": [
 				{
 					"id": "stop-all",
 					"objectClass": "Audio",
-					"sid": 370720061190201
+					"sid": 745059941348206
 				},
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 864998726577163,
+					"sid": 735488045772415,
 					"parameters": {
 						"layout": "Post Game"
 					}
 				}
 			],
-			"sid": 474984338300999
+			"sid": 633100529861745
 		}
 	],
 	"sid": 764309225960778

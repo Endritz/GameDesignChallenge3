@@ -7,7 +7,7 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 776088952679563,
+					"sid": 275667177848706,
 					"parameters": {
 						"key": 32
 					}
@@ -17,76 +17,13 @@
 				{
 					"id": "go-to-layout",
 					"objectClass": "System",
-					"sid": 684034163724596,
+					"sid": 141930989015592,
 					"parameters": {
 						"layout": "Choose Map"
 					}
 				}
 			],
 			"sid": 398104104938534
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Map1Button",
-					"sid": 982139214683914
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 822011037292005,
-					"parameters": {
-						"layout": "Map1"
-					}
-				}
-			],
-			"sid": 725686744574510
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Map2Button",
-					"sid": 658498101487206
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 686620925285893,
-					"parameters": {
-						"layout": "Map2"
-					}
-				}
-			],
-			"sid": 482467037991163
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-clicked",
-					"objectClass": "Map3Button",
-					"sid": 862528407118163
-				}
-			],
-			"actions": [
-				{
-					"id": "go-to-layout",
-					"objectClass": "System",
-					"sid": 843196041967452,
-					"parameters": {
-						"layout": "Map3"
-					}
-				}
-			],
-			"sid": 253894410798598
 		}
 	],
 	"sid": 496870461158164
