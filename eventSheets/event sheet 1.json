@@ -175,32 +175,28 @@
 				{
 					"id": "every-tick",
 					"objectClass": "System",
-					"sid": 679631576633857
+					"sid": 315511852982360
 				}
 			],
 			"actions": [
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 913856742477927,
+					"sid": 840914293324065,
 					"parameters": {
 						"variable": "DistanceBetweenPlayers",
 						"value": "abs(Player1.X - Player2.X)"
 					}
-				}
-			],
-			"sid": 502381004679326
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+				},
 				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 315511852982360
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 588210953336667,
+					"parameters": {
+						"text": "Countdown"
+					}
 				}
 			],
-			"actions": [],
 			"sid": 997263188849646,
 			"children": [
 				{
@@ -339,6 +335,31 @@
 			"eventType": "block",
 			"conditions": [
 				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 975582571941679,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 464099308592964,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 915221441540489
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
 					"id": "on-collision-with-another-object",
 					"objectClass": "Player1",
 					"sid": 148450738460864,
@@ -388,52 +409,6 @@
 				}
 			],
 			"sid": 974411745266041
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-x-seconds",
-					"objectClass": "System",
-					"sid": 571726959533746,
-					"parameters": {
-						"interval-seconds": "1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "subtract-from-eventvar",
-					"objectClass": "System",
-					"sid": 926214876652958,
-					"parameters": {
-						"variable": "Countdown",
-						"value": "1"
-					}
-				}
-			],
-			"sid": 625816026457484
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "every-tick",
-					"objectClass": "System",
-					"sid": 452194455821658
-				}
-			],
-			"actions": [
-				{
-					"id": "set-text",
-					"objectClass": "Timer",
-					"sid": 842670640623186,
-					"parameters": {
-						"text": "Countdown"
-					}
-				}
-			],
-			"sid": 228698360746804
 		},
 		{
 			"eventType": "block",
