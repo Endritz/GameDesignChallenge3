@@ -22,6 +22,36 @@
 			"sid": 271715826558481
 		},
 		{
+			"eventType": "variable",
+			"name": "Time1",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 877894890298561
+		},
+		{
+			"eventType": "variable",
+			"name": "Countdown",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 580893773885445
+		},
+		{
+			"eventType": "variable",
+			"name": "Player1_Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 615476623678627
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player 2 Control",
@@ -315,6 +345,169 @@
 				}
 			],
 			"sid": 481469103441775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player1",
+					"sid": 148450738460864,
+					"parameters": {
+						"object": "Player2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player2",
+					"sid": 733843153055908,
+					"parameters": {
+						"object": "Player2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 433818056728173
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player2",
+					"sid": 424509836195829
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 548686914720315,
+					"parameters": {
+						"variable": "Player1_Score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player1_Score",
+					"sid": 611600021578676,
+					"parameters": {
+						"text": "Player1_Score"
+					}
+				}
+			],
+			"sid": 974411745266041
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 571726959533746,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 926214876652958,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 625816026457484
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 452194455821658
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 842670640623186,
+					"parameters": {
+						"text": "Countdown"
+					}
+				}
+			],
+			"sid": 228698360746804
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "Timer",
+					"sid": 603956795335327
+				}
+			],
+			"actions": [],
+			"sid": 609343908698581
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 912399336010930,
+					"disabled": true,
+					"parameters": {
+						"variable": "Countdown",
+						"comparison": 3,
+						"value": "0.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 898933872318863,
+					"disabled": true,
+					"parameters": {
+						"layout": "Title"
+					}
+				}
+			],
+			"sid": 177655054126721
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player1",
+					"sid": 318218021933847,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Player1_Score",
+					"sid": 665194386079575,
+					"parameters": {
+						"object": "Player1",
+						"image-point-optional": "5"
+					}
+				}
+			],
+			"sid": 481011709677902
 		}
 	],
 	"sid": 764309225960778
