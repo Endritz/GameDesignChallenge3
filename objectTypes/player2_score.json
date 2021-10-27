@@ -2,7 +2,7 @@
 	"name": "Player2_Score",
 	"plugin-id": "Text",
 	"sid": 810969909373322,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": []

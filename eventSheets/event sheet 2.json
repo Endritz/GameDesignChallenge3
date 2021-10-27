@@ -1,0 +1,92 @@
+{
+	"name": "Event sheet 2",
+	"events": [
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 584533224546727,
+					"parameters": {
+						"first-value": "Player1_Score",
+						"comparison": 4,
+						"second-value": "Player2_Score"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Winner",
+					"sid": 985930800566711,
+					"parameters": {
+						"text": "\"Blue Wins!\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player1_Score",
+					"sid": 433294169438058,
+					"parameters": {
+						"text": "Player1_Score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player2_Score",
+					"sid": 533351114189044,
+					"parameters": {
+						"text": "Player2_Score"
+					}
+				}
+			],
+			"sid": 930082313943186,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 786263469358326,
+					"parameters": {
+						"first-value": "Player1_Score",
+						"comparison": 2,
+						"second-value": "Player2_Score"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Winner",
+					"sid": 367527754009026,
+					"parameters": {
+						"text": "\"Red Wins!\""
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player1_Score",
+					"sid": 687706810303240,
+					"parameters": {
+						"text": "Player1_Score"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player2_Score",
+					"sid": 532524956895275,
+					"parameters": {
+						"text": "Player2_Score"
+					}
+				}
+			],
+			"sid": 167350113965283,
+			"isOrBlock": true
+		}
+	],
+	"sid": 188837405280555
+}

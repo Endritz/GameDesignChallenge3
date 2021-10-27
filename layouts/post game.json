@@ -92,8 +92,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 474,
-						"y": 256,
+						"x": 286,
+						"y": 244,
 						"width": 155,
 						"height": 185,
 						"originX": 0,
@@ -134,8 +134,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 657,
-						"y": 254,
+						"x": 463,
+						"y": 245,
 						"width": 180,
 						"height": 224,
 						"originX": 0,
@@ -230,5 +230,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 1"
+	"eventSheet": "Event sheet 2"
 }

@@ -2,7 +2,7 @@
 	"name": "Winner",
 	"plugin-id": "Text",
 	"sid": 838267011593526,
-	"isGlobal": false,
+	"isGlobal": true,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": []
