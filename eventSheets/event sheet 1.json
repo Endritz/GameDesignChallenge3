@@ -305,12 +305,67 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 704988759910329,
+					"sid": 407018102947692,
 					"parameters": {
 						"audio-file": "GourmetRace - Copy",
 						"loop": "looping",
-						"volume": "0",
+						"volume": "-15",
 						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "play",
+					"objectClass": "Audio",
+					"sid": 802267702184073,
+					"parameters": {
+						"audio-file": "smash321",
+						"loop": "not-looping",
+						"volume": "10",
+						"tag-optional": "\"\""
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player2",
+					"sid": 840901959580293,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player1",
+					"sid": 996669738854801,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "start-ignoring"
+					}
+				},
+				{
+					"id": "wait",
+					"objectClass": "System",
+					"sid": 539809212953037,
+					"parameters": {
+						"seconds": "4"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player2",
+					"sid": 103620144215349,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-ignoring-input",
+					"objectClass": "Player1",
+					"sid": 200742860252612,
+					"behaviorType": "Platform",
+					"parameters": {
+						"input": "stop-ignoring"
 					}
 				}
 			],

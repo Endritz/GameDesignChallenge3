@@ -102,8 +102,6 @@
 			"Player1",
 			"Player2",
 			"Block",
-			"Player3",
-			"Player4",
 			"Keyboard",
 			"Particles",
 			"Powerup",
@@ -162,6 +160,11 @@
 					"name": "GourmetRace - Copy.ogg",
 					"type": "audio/ogg; codecs=vorbis",
 					"sid": 129703567540459
+				},
+				{
+					"name": "smash321.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 836543120090300
 				}
 			],
 			"subfolders": []
