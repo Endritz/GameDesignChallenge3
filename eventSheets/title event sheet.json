@@ -19,11 +19,74 @@
 					"objectClass": "System",
 					"sid": 141930989015592,
 					"parameters": {
-						"layout": "Choose Map"
+						"layout": "ChooseMap"
 					}
 				}
 			],
 			"sid": 398104104938534
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Map1Button",
+					"sid": 691349214070161
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 844697147138524,
+					"parameters": {
+						"layout": "Map1"
+					}
+				}
+			],
+			"sid": 575526676451266
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Map2Button",
+					"sid": 864229688276638
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 900070508068472,
+					"parameters": {
+						"layout": "Map2"
+					}
+				}
+			],
+			"sid": 188976553339063
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Map3Button",
+					"sid": 343495610506229
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 340049265909856,
+					"parameters": {
+						"layout": "Map3"
+					}
+				}
+			],
+			"sid": 987929002781950
 		}
 	],
 	"sid": 496870461158164

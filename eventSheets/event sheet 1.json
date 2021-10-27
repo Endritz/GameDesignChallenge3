@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "Countdown",
 			"type": "number",
-			"initialValue": "4",
+			"initialValue": "3",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -171,14 +171,6 @@
 								"variable": "DistanceBetweenPlayers",
 								"value": "distance(Player1.X,Player1.Y,Player2.X,Player2.Y)"
 							}
-						},
-						{
-							"id": "set-text",
-							"objectClass": "Timer",
-							"sid": 106653234972075,
-							"parameters": {
-								"text": "Countdown -1"
-							}
 						}
 					],
 					"sid": 323385562829097,
@@ -305,22 +297,22 @@
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 407018102947692,
+					"sid": 186696484945874,
 					"parameters": {
-						"audio-file": "GourmetRace - Copy",
-						"loop": "looping",
-						"volume": "-15",
+						"audio-file": "smash321",
+						"loop": "not-looping",
+						"volume": "10",
 						"tag-optional": "\"\""
 					}
 				},
 				{
 					"id": "play",
 					"objectClass": "Audio",
-					"sid": 802267702184073,
+					"sid": 984370382314247,
 					"parameters": {
-						"audio-file": "smash321",
-						"loop": "not-looping",
-						"volume": "10",
+						"audio-file": "GourmetRace - Copy",
+						"loop": "looping",
+						"volume": "-15",
 						"tag-optional": "\"\""
 					}
 				},
@@ -345,7 +337,7 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 926905948692642,
+					"sid": 186798163818907,
 					"parameters": {
 						"seconds": "3"
 					}
@@ -380,10 +372,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 417139539861749,
+					"sid": 786991177788569,
 					"parameters": {
 						"variable": "Countdown",
-						"value": "301"
+						"value": "300"
 					}
 				}
 			],
@@ -557,6 +549,14 @@
 							"parameters": {
 								"text": "Player2_Score"
 							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Timer",
+							"sid": 329994362785860,
+							"parameters": {
+								"text": "Countdown +1"
+							}
 						}
 					],
 					"sid": 999888677410514
@@ -567,9 +567,13 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "else",
+					"id": "compare-time",
 					"objectClass": "System",
-					"sid": 846782260478989
+					"sid": 138500905851671,
+					"parameters": {
+						"comparison": 5,
+						"time-seconds": "304"
+					}
 				}
 			],
 			"actions": [

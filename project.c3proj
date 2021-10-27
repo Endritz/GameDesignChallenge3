@@ -132,11 +132,11 @@
 			"Text",
 			"Text2",
 			"Map1Button",
-			"Button",
 			"Map2Button",
 			"JumpThroughBlock",
 			"Text3",
-			"Map3Button"
+			"Map3Button",
+			"Barrier"
 		],
 		"subfolders": []
 	},
@@ -153,7 +153,7 @@
 			"Map2",
 			"Map3",
 			"Post Game",
-			"Choose Map"
+			"ChooseMap"
 		],
 		"subfolders": []
 	},
