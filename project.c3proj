@@ -104,7 +104,8 @@
 			"Sprite",
 			"Player1_Score",
 			"Timer",
-			"Player2_Score"
+			"Player2_Score",
+			"Winner"
 		],
 		"subfolders": []
 	},
@@ -118,7 +119,8 @@
 		"items": [
 			"Title",
 			"Map1",
-			"Map2"
+			"Map2",
+			"Post Game"
 		],
 		"subfolders": []
 	},

@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "Countdown",
 			"type": "number",
-			"initialValue": "300",
+			"initialValue": "10",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -363,6 +363,23 @@
 						"variable": "Countdown",
 						"value": "1"
 					}
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 613067164216461,
+					"parameters": {
+						"variable": "Player2_Score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player2_Score",
+					"sid": 270826905325620,
+					"parameters": {
+						"text": "Player2_Score"
+					}
 				}
 			],
 			"sid": 915221441540489
@@ -383,10 +400,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 548686914720315,
+					"sid": 967112313205476,
 					"parameters": {
 						"variable": "Player1_Score",
-						"value": "1"
+						"value": "10"
 					}
 				},
 				{
@@ -463,6 +480,86 @@
 				}
 			],
 			"sid": 362232326446008
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 555624708463492,
+					"parameters": {
+						"variable": "Countdown",
+						"comparison": 3,
+						"value": "0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 217744182712890,
+					"parameters": {
+						"layout": "Post Game"
+					}
+				}
+			],
+			"sid": 104313346254401
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 366174197431841,
+					"parameters": {
+						"first-value": "Player1_Score",
+						"comparison": 4,
+						"second-value": "Player2_Score"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Winner",
+					"sid": 664752749713968,
+					"parameters": {
+						"text": "\"Blue Wins!\""
+					}
+				}
+			],
+			"sid": 269420188338038,
+			"isOrBlock": true
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-two-values",
+					"objectClass": "System",
+					"sid": 995317294141222,
+					"parameters": {
+						"first-value": "Player1_Score",
+						"comparison": 2,
+						"second-value": "Player2_Score"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Winner",
+					"sid": 380510067694012,
+					"parameters": {
+						"text": "\"Red Wins!\""
+					}
+				}
+			],
+			"sid": 213387802492698,
+			"isOrBlock": true
 		}
 	],
 	"sid": 764309225960778
