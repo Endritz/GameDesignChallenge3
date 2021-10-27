@@ -101,6 +101,14 @@
 			"author": "Scirra",
 			"version": "r268",
 			"bundled": false
+		},
+		{
+			"type": "behavior",
+			"id": "jumpthru",
+			"name": "Jump-thru",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
 		}
 	],
 	"uniqueId": "y04p2if3q310",
@@ -125,7 +133,10 @@
 			"Text2",
 			"Map1Button",
 			"Button",
-			"Map2Button"
+			"Map2Button",
+			"JumpThroughBlock",
+			"Text3",
+			"Map3Button"
 		],
 		"subfolders": []
 	},
@@ -141,7 +152,8 @@
 			"Map1",
 			"Map2",
 			"Post Game",
-			"Choose Map"
+			"Choose Map",
+			"Map3"
 		],
 		"subfolders": []
 	},

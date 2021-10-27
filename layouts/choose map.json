@@ -63,8 +63,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 116,
-						"y": 298,
+						"x": 33,
+						"y": 280,
 						"width": 231,
 						"height": 104,
 						"originX": 0,
@@ -93,8 +93,38 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 501,
-						"y": 300,
+						"x": 305,
+						"y": 280,
+						"width": 231,
+						"height": 104,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						]
+					}
+				},
+				{
+					"type": "Map3Button",
+					"properties": {
+						"type": "button",
+						"text": "Map 3",
+						"tooltip": "",
+						"initially-visible": true,
+						"enabled": true,
+						"auto-font-size": true,
+						"checked": false,
+						"id": ""
+					},
+					"uid": 321,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 583,
+						"y": 280,
 						"width": 231,
 						"height": 104,
 						"originX": 0,
@@ -145,5 +175,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": null
+	"eventSheet": "Title Event Sheet"
 }

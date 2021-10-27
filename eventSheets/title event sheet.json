@@ -66,6 +66,27 @@
 				}
 			],
 			"sid": 482467037991163
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-clicked",
+					"objectClass": "Map3Button",
+					"sid": 862528407118163
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 843196041967452,
+					"parameters": {
+						"layout": "Map3"
+					}
+				}
+			],
+			"sid": 253894410798598
 		}
 	],
 	"sid": 496870461158164
