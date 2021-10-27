@@ -92,7 +92,8 @@
 			"Particles",
 			"Powerup",
 			"Audio",
-			"StartButton"
+			"StartButton",
+			"Sprite"
 		],
 		"subfolders": []
 	},
