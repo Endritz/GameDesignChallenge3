@@ -35,7 +35,7 @@
 			"eventType": "variable",
 			"name": "Countdown",
 			"type": "number",
-			"initialValue": "300",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -345,9 +345,9 @@
 				{
 					"id": "wait",
 					"objectClass": "System",
-					"sid": 539809212953037,
+					"sid": 539911761239857,
 					"parameters": {
-						"seconds": "4"
+						"seconds": "3"
 					}
 				},
 				{
@@ -366,6 +366,24 @@
 					"behaviorType": "Platform",
 					"parameters": {
 						"input": "stop-ignoring"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 213922280839147,
+					"parameters": {
+						"variable": "Player2_Score",
+						"value": "0"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 258991408558817,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "300"
 					}
 				}
 			],
@@ -490,7 +508,7 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 969953706518814,
+					"sid": 110880993134502,
 					"parameters": {
 						"variable": "Countdown",
 						"comparison": 4,
