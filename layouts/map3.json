@@ -6,6 +6,41 @@
 			"overriden": 0,
 			"instances": [
 				{
+					"type": "Sprite",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 329,
+					"instanceVariables": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": false
+							}
+						}
+					},
+					"world": {
+						"x": 981,
+						"y": 1000,
+						"width": 1919,
+						"height": 1276,
+						"originX": 0.5079365079365079,
+						"originY": 0.7817460317460317,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Timer",
 					"properties": {
 						"text": "",
@@ -1508,9 +1543,9 @@
 				1
 			],
 			"backgroundColor": [
-				1,
-				1,
-				1,
+				0.18823529411764706,
+				0.18823529411764706,
+				0.18823529411764706,
 				1
 			],
 			"isTransparent": false,

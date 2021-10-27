@@ -41,6 +41,48 @@
 					}
 				},
 				{
+					"type": "Timer",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 600,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.8392156862745098,
+							0.9019607843137255,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 574,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 15,
+						"y": 275,
+						"width": 1870,
+						"height": 726,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.8
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
 					"type": "Player1",
 					"properties": {
 						"initially-visible": true,
@@ -8550,48 +8592,6 @@
 			"name": "Components",
 			"overriden": 0,
 			"instances": [
-				{
-					"type": "Timer",
-					"properties": {
-						"text": "",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 600,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.8392156862745098,
-							0.9019607843137255,
-							0,
-							1
-						],
-						"horizontal-alignment": "center",
-						"vertical-alignment": "center",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 574,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 15,
-						"y": 275,
-						"width": 1870,
-						"height": 726,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							0.8
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
 				{
 					"type": "Player2_Score",
 					"properties": {
