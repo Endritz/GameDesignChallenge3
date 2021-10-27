@@ -407,9 +407,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "Player1_Score",
-					"sid": 977289825058380,
+					"sid": 713653520614696,
 					"parameters": {
-						"x": "Player1.X - 5",
+						"x": "Player1.X - 10",
 						"y": "Player1.Y - 50"
 					}
 				}
@@ -430,9 +430,9 @@
 				{
 					"id": "set-position",
 					"objectClass": "Player2_Score",
-					"sid": 181856397535355,
+					"sid": 876878922045041,
 					"parameters": {
-						"x": "Player2.X - 5",
+						"x": "Player2.X - 10",
 						"y": "Player2.Y - 50"
 					}
 				}
