@@ -2,7 +2,7 @@
 	"name": "Map1",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Map",
 			"overriden": 0,
 			"instances": [
 				{
@@ -11298,8 +11298,8 @@
 						}
 					},
 					"world": {
-						"x": 1152,
-						"y": 832,
+						"x": 1150.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11334,8 +11334,8 @@
 						}
 					},
 					"world": {
-						"x": 1184,
-						"y": 832,
+						"x": 1182.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11346,7 +11346,7 @@
 							1,
 							1
 						],
-						"angle": 0,
+						"angle": 0.0007186488162758131,
 						"zElevation": 0
 					}
 				},
@@ -11370,8 +11370,8 @@
 						}
 					},
 					"world": {
-						"x": 1216,
-						"y": 832,
+						"x": 1214.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11406,8 +11406,8 @@
 						}
 					},
 					"world": {
-						"x": 1248,
-						"y": 832,
+						"x": 1246.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11442,8 +11442,8 @@
 						}
 					},
 					"world": {
-						"x": 1280,
-						"y": 832,
+						"x": 1278.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11478,8 +11478,8 @@
 						}
 					},
 					"world": {
-						"x": 1312,
-						"y": 832,
+						"x": 1310.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11514,8 +11514,8 @@
 						}
 					},
 					"world": {
-						"x": 1344,
-						"y": 832,
+						"x": 1342.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -11550,8 +11550,8 @@
 						}
 					},
 					"world": {
-						"x": 1376,
-						"y": 832,
+						"x": 1374.3311742535443,
+						"y": 866.6727525056848,
 						"width": 32,
 						"height": 32,
 						"originX": 0,
@@ -12861,6 +12861,48 @@
 						"angle": 0,
 						"zElevation": 0
 					}
+				},
+				{
+					"type": "Player1_Score",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 20,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.050980392156862744,
+							0.2235294117647059,
+							0.8509803921568627,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 574,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 303,
+						"y": 177,
+						"width": 200,
+						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
 				}
 			],
 			"sid": 523939070315299,
@@ -12879,6 +12921,80 @@
 				1
 			],
 			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Components",
+			"overriden": 0,
+			"instances": [
+				{
+					"type": "Timer",
+					"properties": {
+						"text": "",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 600,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.8392156862745098,
+							0.9019607843137255,
+							0,
+							1
+						],
+						"horizontal-alignment": "center",
+						"vertical-alignment": "center",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 573,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 15,
+						"y": 275,
+						"width": 1870,
+						"height": 726,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							0.8
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				}
+			],
+			"sid": 734865908954328,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				0.3686274509803922,
+				0.3686274509803922,
+				0.3686274509803922,
+				1
+			],
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,

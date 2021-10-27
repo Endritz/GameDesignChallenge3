@@ -1,0 +1,9 @@
+{
+	"name": "Player1_Score",
+	"plugin-id": "Text",
+	"sid": 271504418653714,
+	"isGlobal": false,
+	"instanceVariables": [],
+	"behaviorTypes": [],
+	"effectTypes": []
+}

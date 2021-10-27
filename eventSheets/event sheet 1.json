@@ -22,6 +22,36 @@
 			"sid": 271715826558481
 		},
 		{
+			"eventType": "variable",
+			"name": "Time1",
+			"type": "number",
+			"initialValue": "10",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 905737956534354
+		},
+		{
+			"eventType": "variable",
+			"name": "Countdown",
+			"type": "number",
+			"initialValue": "300",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 532039368471549
+		},
+		{
+			"eventType": "variable",
+			"name": "Player1_Score",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 962533869269795
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player 2 Control",
@@ -137,7 +167,8 @@
 					}
 				}
 			],
-			"sid": 149327350457680
+			"sid": 149327350457680,
+			"disabled": true
 		},
 		{
 			"eventType": "block",
@@ -315,6 +346,169 @@
 				}
 			],
 			"sid": 481469103441775
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player1",
+					"sid": 777840483545168,
+					"parameters": {
+						"object": "Player2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "spawn-another-object",
+					"objectClass": "Player2",
+					"sid": 873087181114163,
+					"parameters": {
+						"object": "Player2",
+						"layer": "0",
+						"image-point": "0",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 453215455201011
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player2",
+					"sid": 987349845655191
+				},
+				{
+					"id": "add-to-eventvar",
+					"objectClass": "System",
+					"sid": 364275221822218,
+					"parameters": {
+						"variable": "Player1_Score",
+						"value": "1"
+					}
+				},
+				{
+					"id": "set-text",
+					"objectClass": "Player1_Score",
+					"sid": 661501316646836,
+					"parameters": {
+						"text": "Player1_Score"
+					}
+				}
+			],
+			"sid": 176684120277058
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-x-seconds",
+					"objectClass": "System",
+					"sid": 919245928247158,
+					"parameters": {
+						"interval-seconds": "1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "subtract-from-eventvar",
+					"objectClass": "System",
+					"sid": 958597780176489,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "1"
+					}
+				}
+			],
+			"sid": 409160059316447
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "every-tick",
+					"objectClass": "System",
+					"sid": 913348672189673
+				}
+			],
+			"actions": [
+				{
+					"id": "set-text",
+					"objectClass": "Timer",
+					"sid": 876209402749060,
+					"parameters": {
+						"text": "Countdown"
+					}
+				}
+			],
+			"sid": 166016874720363
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-on-screen",
+					"objectClass": "Timer",
+					"sid": 430513775325028
+				}
+			],
+			"actions": [],
+			"sid": 664438942975068
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "compare-eventvar",
+					"objectClass": "System",
+					"sid": 329909218652957,
+					"disabled": true,
+					"parameters": {
+						"variable": "Countdown",
+						"comparison": 3,
+						"value": "0.0"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "go-to-layout",
+					"objectClass": "System",
+					"sid": 791948473664342,
+					"disabled": true,
+					"parameters": {
+						"layout": "Title"
+					}
+				}
+			],
+			"sid": 729933055125165
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "is-moving",
+					"objectClass": "Player1",
+					"sid": 798316867767879,
+					"behaviorType": "Platform"
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position-to-another-object",
+					"objectClass": "Player1_Score",
+					"sid": 425499210694205,
+					"parameters": {
+						"object": "Player1",
+						"image-point-optional": "5"
+					}
+				}
+			],
+			"sid": 261748488079206
 		}
 	],
 	"sid": 764309225960778
