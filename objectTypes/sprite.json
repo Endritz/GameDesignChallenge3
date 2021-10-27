@@ -4,7 +4,13 @@
 	"sid": 759342235462473,
 	"isGlobal": false,
 	"instanceVariables": [],
-	"behaviorTypes": [],
+	"behaviorTypes": [
+		{
+			"behaviorId": "scrollto",
+			"name": "ScrollTo",
+			"sid": 656663821305611
+		}
+	],
 	"effectTypes": [],
 	"animations": {
 		"items": [
@@ -13,8 +19,8 @@
 					{
 						"width": 252,
 						"height": 252,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.5079365079365079,
+						"originY": 0.7817460317460317,
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,

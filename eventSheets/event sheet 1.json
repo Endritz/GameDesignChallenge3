@@ -166,10 +166,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 426497701199851,
+							"sid": 500300595838335,
 							"parameters": {
 								"variable": "DistanceBetweenPlayers",
-								"value": "abs(Player1.X - Player2.X)"
+								"value": "distance(Player1.X,Player1.Y,Player2.X,Player2.Y)"
 							}
 						},
 						{
@@ -201,9 +201,9 @@
 								{
 									"id": "set-layout-scale",
 									"objectClass": "System",
-									"sid": 516008502544535,
+									"sid": 776827413249179,
 									"parameters": {
-										"scale": "1/3"
+										"scale": "LayoutScale + (1/4 - LayoutScale)/2"
 									}
 								}
 							],
@@ -227,9 +227,9 @@
 								{
 									"id": "set-layout-scale",
 									"objectClass": "System",
-									"sid": 923150687596097,
+									"sid": 627846590532420,
 									"parameters": {
-										"scale": "1/2"
+										"scale": "LayoutScale + (1/2 - LayoutScale)/4"
 									}
 								}
 							],
@@ -241,11 +241,11 @@
 								{
 									"id": "compare-two-values",
 									"objectClass": "System",
-									"sid": 907761601685454,
+									"sid": 544688162081166,
 									"parameters": {
 										"first-value": "DistanceBetweenPlayers",
 										"comparison": 2,
-										"second-value": "700"
+										"second-value": "600"
 									}
 								}
 							],
@@ -253,39 +253,13 @@
 								{
 									"id": "set-layout-scale",
 									"objectClass": "System",
-									"sid": 485400480540980,
+									"sid": 492376609096768,
 									"parameters": {
-										"scale": "3/4"
+										"scale": "LayoutScale + (2/3 - LayoutScale)/8"
 									}
 								}
 							],
 							"sid": 686904523908967
-						},
-						{
-							"eventType": "block",
-							"conditions": [
-								{
-									"id": "compare-two-values",
-									"objectClass": "System",
-									"sid": 925189704747857,
-									"parameters": {
-										"first-value": "DistanceBetweenPlayers",
-										"comparison": 2,
-										"second-value": "400"
-									}
-								}
-							],
-							"actions": [
-								{
-									"id": "set-layout-scale",
-									"objectClass": "System",
-									"sid": 821243240805647,
-									"parameters": {
-										"scale": "4/5"
-									}
-								}
-							],
-							"sid": 882181449032584
 						},
 						{
 							"eventType": "block",
@@ -305,9 +279,9 @@
 								{
 									"id": "set-layout-scale",
 									"objectClass": "System",
-									"sid": 115073733317992,
+									"sid": 655421365725241,
 									"parameters": {
-										"scale": "1"
+										"scale": "LayoutScale + (2 - LayoutScale)/20"
 									}
 								}
 							],
@@ -337,15 +311,6 @@
 						"loop": "looping",
 						"volume": "0",
 						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "scroll-to-position",
-					"objectClass": "System",
-					"sid": 870353127299008,
-					"parameters": {
-						"x": "(ViewportLeft(\"MAP1\") + ViewportRight(\"MAP1\"))/2",
-						"y": "620"
 					}
 				}
 			],
@@ -389,12 +354,12 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 207846828726410,
+					"sid": 102204237069373,
 					"parameters": {
 						"object-to-create": "Player1",
 						"layer": "0",
 						"x": "288",
-						"y": "244",
+						"y": "1027",
 						"create-hierarchy": false
 					}
 				},

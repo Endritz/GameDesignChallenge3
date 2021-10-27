@@ -16,14 +16,20 @@
 					},
 					"uid": 572,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": false
+							}
+						}
+					},
 					"world": {
-						"x": 962.5,
-						"y": 642,
+						"x": 974,
+						"y": 994,
 						"width": 1919,
 						"height": 1276,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.5079365079365079,
+						"originY": 0.7817460317460317,
 						"color": [
 							1,
 							1,
@@ -79,7 +85,7 @@
 					},
 					"world": {
 						"x": 288,
-						"y": 244,
+						"y": 1027,
 						"width": 32,
 						"height": 32,
 						"originX": 0.5,
@@ -7813,7 +7819,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 282,
-						"y": 202,
+						"y": 975,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -8613,7 +8619,7 @@
 					"behaviors": {},
 					"world": {
 						"x": 1529,
-						"y": 105,
+						"y": 93,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -8662,7 +8668,7 @@
 	"effectTypes": [],
 	"width": 1920,
 	"height": 1280,
-	"unboundedScrolling": false,
+	"unboundedScrolling": true,
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",

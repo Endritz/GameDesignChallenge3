@@ -16,14 +16,20 @@
 					},
 					"uid": 576,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
 						"x": 500,
 						"y": 406,
 						"width": 1919,
 						"height": 1276,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0.5079365079365079,
+						"originY": 0.7817460317460317,
 						"color": [
 							1,
 							1,
