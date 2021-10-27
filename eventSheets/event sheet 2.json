@@ -19,9 +19,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Winner",
-					"sid": 985930800566711,
+					"sid": 779565549653900,
 					"parameters": {
-						"text": "\"Blue Wins!\""
+						"text": "\"Red Wins!\""
 					}
 				},
 				{
@@ -62,9 +62,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Winner",
-					"sid": 367527754009026,
+					"sid": 691477287953610,
 					"parameters": {
-						"text": "\"Red Wins!\""
+						"text": "\"Blue Wins!\""
 					}
 				},
 				{

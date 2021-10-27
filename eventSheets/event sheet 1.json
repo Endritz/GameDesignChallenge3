@@ -338,6 +338,15 @@
 						"volume": "0",
 						"tag-optional": "\"\""
 					}
+				},
+				{
+					"id": "scroll-to-position",
+					"objectClass": "System",
+					"sid": 870353127299008,
+					"parameters": {
+						"x": "(ViewportLeft(\"MAP1\") + ViewportRight(\"MAP1\"))/2",
+						"y": "620"
+					}
 				}
 			],
 			"sid": 149327350457680
