@@ -356,9 +356,43 @@
 			],
 			"actions": [
 				{
+					"id": "destroy",
+					"objectClass": "Player1",
+					"sid": 156168807845240
+				},
+				{
+					"id": "destroy",
+					"objectClass": "Player2",
+					"sid": 600247760940467
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 614007975168350,
+					"parameters": {
+						"object-to-create": "Player2",
+						"layer": "0",
+						"x": "1536",
+						"y": "145",
+						"create-hierarchy": false
+					}
+				},
+				{
+					"id": "create-object",
+					"objectClass": "System",
+					"sid": 207846828726410,
+					"parameters": {
+						"object-to-create": "Player1",
+						"layer": "0",
+						"x": "288",
+						"y": "244",
+						"create-hierarchy": false
+					}
+				},
+				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 967112313205476,
+					"sid": 805946134419109,
 					"parameters": {
 						"variable": "Player1_Score",
 						"value": "10"
@@ -367,27 +401,9 @@
 				{
 					"id": "set-text",
 					"objectClass": "Player1_Score",
-					"sid": 611600021578676,
+					"sid": 954756458992535,
 					"parameters": {
 						"text": "Player1_Score"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Player2",
-					"sid": 280044419992982,
-					"parameters": {
-						"x": "1536",
-						"y": "145"
-					}
-				},
-				{
-					"id": "set-position",
-					"objectClass": "Player1",
-					"sid": 244361500897725,
-					"parameters": {
-						"x": "288",
-						"y": "244"
 					}
 				}
 			],
