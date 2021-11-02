@@ -15,11 +15,12 @@
 			],
 			"actions": [
 				{
-					"id": "go-to-layout",
+					"id": "set-layer-visible",
 					"objectClass": "System",
-					"sid": 141930989015592,
+					"sid": 509622322502644,
 					"parameters": {
-						"layout": "ChooseMap"
+						"layer": "1",
+						"visibility": "visible"
 					}
 				}
 			],

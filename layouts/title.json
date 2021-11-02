@@ -2,7 +2,7 @@
 	"name": "Title",
 	"layers": [
 		{
-			"name": "Layer 0",
+			"name": "Title",
 			"overriden": 0,
 			"instances": [
 				{
@@ -66,12 +66,44 @@
 						"angle": 0,
 						"zElevation": 0
 					}
-				},
+				}
+			],
+			"sid": 431194423410197,
+			"effectTypes": [],
+			"isInitiallyVisible": true,
+			"color": [
+				1,
+				1,
+				1,
+				1
+			],
+			"backgroundColor": [
+				1,
+				1,
+				1,
+				1
+			],
+			"isTransparent": false,
+			"parallaxX": 1,
+			"parallaxY": 1,
+			"scaleRate": 1,
+			"forceOwnTexture": false,
+			"renderingMode": "3d",
+			"drawOrder": "z-order",
+			"useRenderCells": false,
+			"blendMode": "normal",
+			"zElevation": 0,
+			"global": false
+		},
+		{
+			"name": "Maps",
+			"overriden": 0,
+			"instances": [
 				{
-					"type": "Map1Button",
+					"type": "Map3Button",
 					"properties": {
 						"type": "button",
-						"text": "Map 1",
+						"text": "Map 3",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -79,11 +111,11 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 278,
+					"uid": 324,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 112,
+						"x": 585,
 						"y": 219,
 						"width": 231,
 						"height": 108,
@@ -128,10 +160,10 @@
 					}
 				},
 				{
-					"type": "Map3Button",
+					"type": "Map1Button",
 					"properties": {
 						"type": "button",
-						"text": "Map 3",
+						"text": "Map 1",
 						"tooltip": "",
 						"initially-visible": true,
 						"enabled": true,
@@ -139,11 +171,11 @@
 						"checked": false,
 						"id": ""
 					},
-					"uid": 324,
+					"uid": 278,
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 585,
+						"x": 112,
 						"y": 219,
 						"width": 231,
 						"height": 108,
@@ -158,9 +190,9 @@
 					}
 				}
 			],
-			"sid": 431194423410197,
+			"sid": 615104008582911,
 			"effectTypes": [],
-			"isInitiallyVisible": true,
+			"isInitiallyVisible": false,
 			"color": [
 				1,
 				1,
@@ -173,7 +205,7 @@
 				1,
 				1
 			],
-			"isTransparent": false,
+			"isTransparent": true,
 			"parallaxX": 1,
 			"parallaxY": 1,
 			"scaleRate": 1,
