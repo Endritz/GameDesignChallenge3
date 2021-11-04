@@ -431,10 +431,10 @@
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 805946134419109,
+					"sid": 899567186347274,
 					"parameters": {
 						"variable": "Player1_Score",
-						"value": "10"
+						"value": "20"
 					}
 				},
 				{
