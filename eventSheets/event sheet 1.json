@@ -372,10 +372,10 @@
 				{
 					"id": "set-eventvar-value",
 					"objectClass": "System",
-					"sid": 786991177788569,
+					"sid": 201756041247293,
 					"parameters": {
 						"variable": "Countdown",
-						"value": "300"
+						"value": "120"
 					}
 				}
 			],
@@ -569,10 +569,10 @@
 				{
 					"id": "compare-time",
 					"objectClass": "System",
-					"sid": 138500905851671,
+					"sid": 808738400488047,
 					"parameters": {
 						"comparison": 5,
-						"time-seconds": "304"
+						"time-seconds": "124"
 					}
 				}
 			],
