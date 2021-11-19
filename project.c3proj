@@ -71,6 +71,14 @@
 			"bundled": false
 		},
 		{
+			"type": "plugin",
+			"id": "Dictionary",
+			"name": "Dictionary",
+			"author": "Scirra",
+			"version": "r268",
+			"bundled": false
+		},
+		{
 			"type": "behavior",
 			"id": "Platform",
 			"name": "Platform",
@@ -136,7 +144,8 @@
 			"JumpThroughBlock",
 			"Text3",
 			"Map3Button",
-			"Barrier"
+			"Barrier",
+			"Dictionary"
 		],
 		"subfolders": []
 	},
@@ -173,11 +182,6 @@
 		"sound": {
 			"items": [
 				{
-					"name": "videoplayback.m4a",
-					"type": "audio/mp4",
-					"sid": 532890493600998
-				},
-				{
 					"name": "GourmetRace.m4a",
 					"type": "audio/mp4",
 					"sid": 687038301631852
@@ -191,6 +195,11 @@
 					"name": "smash321.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 836543120090300
+				},
+				{
+					"name": "Battle2.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 965477612557230
 				}
 			],
 			"subfolders": []

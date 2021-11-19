@@ -13,6 +13,16 @@
 		},
 		{
 			"eventType": "variable",
+			"name": "CurrentList",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 632094714797801
+		},
+		{
+			"eventType": "variable",
 			"name": "Tagged",
 			"type": "number",
 			"initialValue": "0",
@@ -285,101 +295,136 @@
 			"sid": 238421620610607
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Music",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [],
+			"sid": 833630681467959
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "GameStart",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-start-of-layout",
-					"objectClass": "System",
-					"sid": 501363964723870
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-start-of-layout",
+							"objectClass": "System",
+							"sid": 743013965481509
+						}
+					],
+					"actions": [
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 450699547044648,
+							"parameters": {
+								"key": "\"Song1\"",
+								"value": "\"GourmetRace - Copy\""
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 791052535855927,
+							"parameters": {
+								"key": "\"Song2\"",
+								"value": "\"Battle2\""
+							}
+						},
+						{
+							"id": "play",
+							"objectClass": "Audio",
+							"sid": 738457630710316,
+							"parameters": {
+								"audio-file": "smash321",
+								"loop": "not-looping",
+								"volume": "10",
+								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 499027823235065,
+							"parameters": {
+								"variable": "CurrentList",
+								"value": "random(0,2)"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player2",
+							"sid": 939916429092961,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player1",
+							"sid": 758842920381461,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "start-ignoring"
+							}
+						},
+						{
+							"id": "wait",
+							"objectClass": "System",
+							"sid": 814516121274652,
+							"parameters": {
+								"seconds": "3"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player2",
+							"sid": 783974078058686,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-ignoring-input",
+							"objectClass": "Player1",
+							"sid": 713921999304311,
+							"behaviorType": "Platform",
+							"parameters": {
+								"input": "stop-ignoring"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 181843429378719,
+							"parameters": {
+								"variable": "Player2_Score",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 749788284435712,
+							"parameters": {
+								"variable": "Countdown",
+								"value": "120"
+							}
+						}
+					],
+					"sid": 947091763523681
 				}
 			],
-			"actions": [
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 186696484945874,
-					"parameters": {
-						"audio-file": "smash321",
-						"loop": "not-looping",
-						"volume": "10",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "play",
-					"objectClass": "Audio",
-					"sid": 984370382314247,
-					"parameters": {
-						"audio-file": "GourmetRace - Copy",
-						"loop": "looping",
-						"volume": "-15",
-						"tag-optional": "\"\""
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "Player2",
-					"sid": 840901959580293,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "Player1",
-					"sid": 996669738854801,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "start-ignoring"
-					}
-				},
-				{
-					"id": "wait",
-					"objectClass": "System",
-					"sid": 186798163818907,
-					"parameters": {
-						"seconds": "3"
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "Player2",
-					"sid": 103620144215349,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "stop-ignoring"
-					}
-				},
-				{
-					"id": "set-ignoring-input",
-					"objectClass": "Player1",
-					"sid": 200742860252612,
-					"behaviorType": "Platform",
-					"parameters": {
-						"input": "stop-ignoring"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 213922280839147,
-					"parameters": {
-						"variable": "Player2_Score",
-						"value": "0"
-					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 201756041247293,
-					"parameters": {
-						"variable": "Countdown",
-						"value": "120"
-					}
-				}
-			],
-			"sid": 149327350457680
+			"sid": 443340642837280
 		},
 		{
 			"eventType": "block",
