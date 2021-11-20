@@ -8,14 +8,6 @@
 	"usedAddons": [
 		{
 			"type": "plugin",
-			"id": "Multiplayer",
-			"name": "Multiplayer",
-			"author": "Scirra",
-			"version": "r268",
-			"bundled": false
-		},
-		{
-			"type": "plugin",
 			"id": "Sprite",
 			"name": "Sprite",
 			"author": "Scirra",
@@ -122,7 +114,6 @@
 	"uniqueId": "y04p2if3q310",
 	"objectTypes": {
 		"items": [
-			"Multiplayer",
 			"Player1",
 			"Player2",
 			"Block",
@@ -131,7 +122,7 @@
 			"Powerup",
 			"Audio",
 			"StartButton",
-			"Sprite",
+			"Background",
 			"Player1_Score",
 			"Timer",
 			"Player2_Score",
@@ -145,7 +136,9 @@
 			"Text3",
 			"Map3Button",
 			"Barrier",
-			"Dictionary"
+			"Dictionary",
+			"power1",
+			"Restart"
 		],
 		"subfolders": []
 	},
@@ -169,8 +162,7 @@
 		"items": [
 			"Event sheet 1",
 			"Event sheet 2",
-			"Title Event Sheet",
-			"Choose Event Sheet"
+			"Title Event Sheet"
 		],
 		"subfolders": []
 	},
@@ -181,11 +173,6 @@
 		},
 		"sound": {
 			"items": [
-				{
-					"name": "GourmetRace.m4a",
-					"type": "audio/mp4",
-					"sid": 687038301631852
-				},
 				{
 					"name": "GourmetRace - Copy.ogg",
 					"type": "audio/ogg; codecs=vorbis",
@@ -200,6 +187,11 @@
 					"name": "Battle2.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 965477612557230
+				},
+				{
+					"name": "Virtual Storm (BA).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 707970795255054
 				}
 			],
 			"subfolders": []

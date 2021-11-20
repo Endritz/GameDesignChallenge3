@@ -1,5 +1,5 @@
 {
-	"name": "Sprite",
+	"name": "Background",
 	"plugin-id": "Sprite",
 	"sid": 759342235462473,
 	"isGlobal": false,
@@ -24,7 +24,7 @@
 						"originalSource": "",
 						"exportFormat": "png",
 						"exportQuality": 0.8,
-						"imageSpriteId": 175196,
+						"imageSpriteId": 5003509,
 						"collisionPoly": {
 							"points": [
 								0.003968253968253968,

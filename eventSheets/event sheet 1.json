@@ -287,7 +287,34 @@
 									}
 								}
 							],
-							"sid": 804196416244578
+							"sid": 804196416244578,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 641527069914464,
+											"parameters": {
+												"interval-seconds": "1.5"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 552375928588781,
+											"parameters": {
+												"variable": "Player2_Score",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 945331415386126
+								}
+							]
 						}
 					]
 				}
@@ -323,19 +350,28 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 450699547044648,
+							"sid": 808388767411605,
 							"parameters": {
-								"key": "\"Song1\"",
+								"key": "\"Song0\"",
 								"value": "\"GourmetRace - Copy\""
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 791052535855927,
+							"sid": 263250771229432,
+							"parameters": {
+								"key": "\"Song1\"",
+								"value": "\"Battle2\""
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 672758611491864,
 							"parameters": {
 								"key": "\"Song2\"",
-								"value": "\"Battle2\""
+								"value": "\"Virtual Storm (BA)\""
 							}
 						},
 						{
@@ -352,10 +388,22 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 499027823235065,
+							"sid": 961753005796004,
 							"parameters": {
 								"variable": "CurrentList",
-								"value": "random(0,2)"
+								"value": "floor(random(0,3))"
+							}
+						},
+						{
+							"id": "play-by-name",
+							"objectClass": "Audio",
+							"sid": 516973808515666,
+							"parameters": {
+								"folder": "sounds",
+								"audio-file-name": "Dictionary.Get(\"Song\"&CurrentList)",
+								"loop": "not-looping",
+								"volume": "-15",
+								"tag-optional": "\"\""
 							}
 						},
 						{
