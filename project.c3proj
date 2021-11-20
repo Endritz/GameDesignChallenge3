@@ -137,7 +137,9 @@
 			"power1",
 			"Restart",
 			"Player1_Final",
-			"Player2_Final"
+			"Player2_Final",
+			"Teleport1",
+			"Teleport2"
 		],
 		"subfolders": []
 	},

@@ -45,7 +45,7 @@
 			"eventType": "variable",
 			"name": "Countdown",
 			"type": "number",
-			"initialValue": "3",
+			"initialValue": "4",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -261,7 +261,34 @@
 									}
 								}
 							],
-							"sid": 686904523908967
+							"sid": 686904523908967,
+							"children": [
+								{
+									"eventType": "block",
+									"conditions": [
+										{
+											"id": "every-x-seconds",
+											"objectClass": "System",
+											"sid": 935920625820821,
+											"parameters": {
+												"interval-seconds": "2"
+											}
+										}
+									],
+									"actions": [
+										{
+											"id": "add-to-eventvar",
+											"objectClass": "System",
+											"sid": 313419911549576,
+											"parameters": {
+												"variable": "Player2_Score",
+												"value": "1"
+											}
+										}
+									],
+									"sid": 148681119702562
+								}
+							]
 						},
 						{
 							"eventType": "block",
@@ -295,9 +322,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 641527069914464,
+											"sid": 249230357272303,
 											"parameters": {
-												"interval-seconds": "1.5"
+												"interval-seconds": "1"
 											}
 										}
 									],
@@ -305,10 +332,10 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 552375928588781,
+											"sid": 518130798201863,
 											"parameters": {
 												"variable": "Player2_Score",
-												"value": "1"
+												"value": "2"
 											}
 										}
 									],
@@ -347,6 +374,31 @@
 						}
 					],
 					"actions": [
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 230416081052457,
+							"parameters": {
+								"variable": "Player1_Score",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Player1_Score",
+							"sid": 654563918489435,
+							"parameters": {
+								"text": "Player1_Score"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Player2_Score",
+							"sid": 646929414884687,
+							"parameters": {
+								"text": "Player2_Score"
+							}
+						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
@@ -407,6 +459,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 990233596615264,
+							"parameters": {
+								"variable": "Countdown",
+								"value": "4"
+							}
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "Player2",
 							"sid": 939916429092961,
@@ -462,10 +523,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 749788284435712,
+							"sid": 714645948125250,
 							"parameters": {
 								"variable": "Countdown",
-								"value": "120"
+								"value": "181"
 							}
 						}
 					],
@@ -500,34 +561,34 @@
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 614007975168350,
+					"sid": 151852696232953,
 					"parameters": {
 						"object-to-create": "Player2",
 						"layer": "0",
-						"x": "1536",
-						"y": "145",
+						"x": "1559",
+						"y": "176",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "create-object",
 					"objectClass": "System",
-					"sid": 102204237069373,
+					"sid": 520885715716585,
 					"parameters": {
 						"object-to-create": "Player1",
 						"layer": "0",
-						"x": "288",
-						"y": "1027",
+						"x": "279",
+						"y": "1069",
 						"create-hierarchy": false
 					}
 				},
 				{
 					"id": "add-to-eventvar",
 					"objectClass": "System",
-					"sid": 899567186347274,
+					"sid": 369354023308649,
 					"parameters": {
 						"variable": "Player1_Score",
-						"value": "20"
+						"value": "25"
 					}
 				},
 				{
@@ -593,11 +654,11 @@
 				{
 					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 414390671461789,
+					"sid": 321306579363993,
 					"parameters": {
 						"variable": "Countdown",
 						"comparison": 4,
-						"value": "0"
+						"value": "-1"
 					}
 				}
 			],
@@ -646,9 +707,9 @@
 						{
 							"id": "set-text",
 							"objectClass": "Timer",
-							"sid": 329994362785860,
+							"sid": 725160973914024,
 							"parameters": {
-								"text": "Countdown +1"
+								"text": "Countdown"
 							}
 						}
 					],
@@ -660,12 +721,13 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "compare-time",
+					"id": "compare-eventvar",
 					"objectClass": "System",
-					"sid": 893805932226680,
+					"sid": 715547092927585,
 					"parameters": {
-						"comparison": 5,
-						"time-seconds": "34"
+						"variable": "Countdown",
+						"comparison": 0,
+						"value": "0"
 					}
 				}
 			],
@@ -685,6 +747,106 @@
 				}
 			],
 			"sid": 633100529861745
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player1",
+					"sid": 821399154818382,
+					"parameters": {
+						"object": "Teleport1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player1",
+					"sid": 385992404258313,
+					"parameters": {
+						"x": "Teleport2.X-50",
+						"y": "Teleport2.Y"
+					}
+				}
+			],
+			"sid": 840396962839383
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player1",
+					"sid": 601364982084139,
+					"parameters": {
+						"object": "Teleport2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player1",
+					"sid": 933236438749682,
+					"parameters": {
+						"x": "Teleport1.X+50",
+						"y": "Teleport1.Y + 10"
+					}
+				}
+			],
+			"sid": 119044746015181
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player2",
+					"sid": 581592483028384,
+					"parameters": {
+						"object": "Teleport1"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player2",
+					"sid": 358856247790079,
+					"parameters": {
+						"x": "Teleport2.X-50",
+						"y": "Teleport2.Y"
+					}
+				}
+			],
+			"sid": 343923575997342
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-collision-with-another-object",
+					"objectClass": "Player2",
+					"sid": 745552323240429,
+					"parameters": {
+						"object": "Teleport2"
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-position",
+					"objectClass": "Player2",
+					"sid": 418968025100853,
+					"parameters": {
+						"x": "Teleport1.X+50",
+						"y": "Teleport1.Y + 10"
+					}
+				}
+			],
+			"sid": 424475108732038
 		}
 	],
 	"sid": 764309225960778

@@ -8322,7 +8322,7 @@
 						}
 					},
 					"world": {
-						"x": 472,
+						"x": 488,
 						"y": 711,
 						"width": 152,
 						"height": 32,
@@ -9287,10 +9287,10 @@
 					}
 				},
 				{
-					"type": "JumpThroughBlock",
+					"type": "Block",
 					"properties": {
 						"initially-visible": true,
-						"initial-animation": "Animation 1",
+						"initial-animation": "Default",
 						"initial-frame": 0,
 						"enable-collisions": true,
 						"live-preview": false
@@ -9298,19 +9298,20 @@
 					"uid": 277,
 					"instanceVariables": {},
 					"behaviors": {
-						"Jumpthru": {
+						"Solid": {
 							"properties": {
-								"enabled": true
+								"enabled": true,
+								"tags": ""
 							}
 						}
 					},
 					"world": {
-						"x": 865,
-						"y": 120,
-						"width": 227,
+						"x": 767,
+						"y": 188,
+						"width": 193,
 						"height": 32,
-						"originX": 0.5,
-						"originY": 0.5,
+						"originX": 0,
+						"originY": 1,
 						"color": [
 							1,
 							1,

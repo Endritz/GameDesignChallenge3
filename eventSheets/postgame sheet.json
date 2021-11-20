@@ -107,15 +107,6 @@
 					"parameters": {
 						"layout": "Title"
 					}
-				},
-				{
-					"id": "set-eventvar-value",
-					"objectClass": "System",
-					"sid": 743061567519811,
-					"parameters": {
-						"variable": "Countdown",
-						"value": "3"
-					}
 				}
 			],
 			"sid": 540412395344009
