@@ -23,10 +23,10 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Tagged",
+			"name": "Spawn",
 			"type": "number",
 			"initialValue": "0",
-			"comment": "",
+			"comment": "Determines the area where both players spawn",
 			"isStatic": false,
 			"isConstant": false,
 			"sid": 271715826558481
@@ -662,10 +662,10 @@
 				{
 					"id": "compare-time",
 					"objectClass": "System",
-					"sid": 808738400488047,
+					"sid": 893805932226680,
 					"parameters": {
 						"comparison": 5,
-						"time-seconds": "124"
+						"time-seconds": "34"
 					}
 				}
 			],

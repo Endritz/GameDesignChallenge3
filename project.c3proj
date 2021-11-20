@@ -128,17 +128,16 @@
 			"Player2_Score",
 			"Winner",
 			"TiledBackground",
-			"Text",
-			"Text2",
 			"Map1Button",
 			"Map2Button",
 			"JumpThroughBlock",
-			"Text3",
 			"Map3Button",
 			"Barrier",
 			"Dictionary",
 			"power1",
-			"Restart"
+			"Restart",
+			"Player1_Final",
+			"Player2_Final"
 		],
 		"subfolders": []
 	},
@@ -161,7 +160,7 @@
 	"eventSheets": {
 		"items": [
 			"Event sheet 1",
-			"Event sheet 2",
+			"PostGame Sheet",
 			"Title Event Sheet"
 		],
 		"subfolders": []

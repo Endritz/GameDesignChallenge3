@@ -1,5 +1,5 @@
 {
-	"name": "Event sheet 2",
+	"name": "PostGame Sheet",
 	"events": [
 		{
 			"eventType": "block",
@@ -26,16 +26,16 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Player1_Score",
-					"sid": 433294169438058,
+					"objectClass": "Player1_Final",
+					"sid": 178364055570434,
 					"parameters": {
 						"text": "Player1_Score"
 					}
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Player2_Score",
-					"sid": 533351114189044,
+					"objectClass": "Player2_Final",
+					"sid": 284899951761748,
 					"parameters": {
 						"text": "Player2_Score"
 					}
@@ -69,16 +69,16 @@
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Player1_Score",
-					"sid": 687706810303240,
+					"objectClass": "Player1_Final",
+					"sid": 701903513548972,
 					"parameters": {
 						"text": "Player1_Score"
 					}
 				},
 				{
 					"id": "set-text",
-					"objectClass": "Player2_Score",
-					"sid": 532524956895275,
+					"objectClass": "Player2_Final",
+					"sid": 295528011081595,
 					"parameters": {
 						"text": "Player2_Score"
 					}
@@ -93,9 +93,9 @@
 				{
 					"id": "on-key-pressed",
 					"objectClass": "Keyboard",
-					"sid": 634987470802059,
+					"sid": 806400147249536,
 					"parameters": {
-						"key": 32
+						"key": 82
 					}
 				}
 			],
@@ -106,6 +106,15 @@
 					"sid": 280342597419082,
 					"parameters": {
 						"layout": "Title"
+					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 743061567519811,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "3"
 					}
 				}
 			],

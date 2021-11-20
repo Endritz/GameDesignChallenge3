@@ -19,17 +19,101 @@
 					"behaviors": {
 						"ScrollTo": {
 							"properties": {
-								"enabled": true
+								"enabled": false
 							}
 						}
 					},
 					"world": {
-						"x": 500,
-						"y": 406,
-						"width": 1919,
-						"height": 1276,
+						"x": 838,
+						"y": 735,
+						"width": 1695,
+						"height": 961,
 						"originX": 0.5079365079365079,
 						"originY": 0.7817460317460317,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player1_Final",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 100,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.984313725490196,
+							0.0392156862745098,
+							0.00392156862745098,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 0,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 205,
+						"y": 132,
+						"width": 499,
+						"height": 250,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Player2_Final",
+					"properties": {
+						"text": "0",
+						"enable-bbcode": true,
+						"font": "Arial",
+						"size": 100,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							0.19215686274509805,
+							0.36470588235294116,
+							0.9372549019607843,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 326,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 523,
+						"y": 132,
+						"width": 342,
+						"height": 194,
+						"originX": 0,
+						"originY": 0,
 						"color": [
 							1,
 							1,
@@ -73,93 +157,9 @@
 			"overriden": 0,
 			"instances": [
 				{
-					"type": "Player1_Score",
-					"properties": {
-						"text": "0",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 100,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.984313725490196,
-							0.0392156862745098,
-							0.00392156862745098,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 577,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 192,
-						"y": 136,
-						"width": 409,
-						"height": 185,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
-					"type": "Player2_Score",
-					"properties": {
-						"text": "0",
-						"enable-bbcode": true,
-						"font": "Arial",
-						"size": 100,
-						"line-height": 0,
-						"bold": false,
-						"italic": false,
-						"color": [
-							0.19215686274509805,
-							0.36470588235294116,
-							0.9372549019607843,
-							1
-						],
-						"horizontal-alignment": "left",
-						"vertical-alignment": "top",
-						"wrapping": "word",
-						"initially-visible": true,
-						"origin": "top-left"
-					},
-					"uid": 578,
-					"instanceVariables": {},
-					"behaviors": {},
-					"world": {
-						"x": 530,
-						"y": 137,
-						"width": 408,
-						"height": 224,
-						"originX": 0,
-						"originY": 0,
-						"color": [
-							1,
-							1,
-							1,
-							1
-						],
-						"angle": 0,
-						"zElevation": 0
-					}
-				},
-				{
 					"type": "Winner",
 					"properties": {
-						"text": "",
+						"text": "A",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 50,
@@ -180,12 +180,18 @@
 					},
 					"uid": 579,
 					"instanceVariables": {},
-					"behaviors": {},
+					"behaviors": {
+						"ScrollTo": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
 					"world": {
-						"x": 15,
-						"y": 4,
-						"width": 849,
-						"height": 244,
+						"x": 264,
+						"y": 83,
+						"width": 508,
+						"height": 75,
 						"originX": 0,
 						"originY": 0,
 						"color": [
@@ -201,7 +207,7 @@
 				{
 					"type": "Restart",
 					"properties": {
-						"text": "Press Space to Restart",
+						"text": "Press R to Restart",
 						"enable-bbcode": true,
 						"font": "Arial",
 						"size": 12,
@@ -224,8 +230,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 305,
-						"y": 324,
+						"x": 358,
+						"y": 347,
 						"width": 200,
 						"height": 30,
 						"originX": 0,
@@ -278,5 +284,5 @@
 	"vpX": 0.5,
 	"vpY": 0.5,
 	"projection": "perspective",
-	"eventSheet": "Event sheet 2"
+	"eventSheet": "PostGame Sheet"
 }

@@ -5,31 +5,6 @@
 			"eventType": "block",
 			"conditions": [
 				{
-					"id": "on-key-pressed",
-					"objectClass": "Keyboard",
-					"sid": 275667177848706,
-					"parameters": {
-						"key": 32
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-layer-visible",
-					"objectClass": "System",
-					"sid": 509622322502644,
-					"parameters": {
-						"layer": "1",
-						"visibility": "visible"
-					}
-				}
-			],
-			"sid": 398104104938534
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
 					"id": "on-clicked",
 					"objectClass": "Map1Button",
 					"sid": 691349214070161
@@ -88,6 +63,53 @@
 				}
 			],
 			"sid": 987929002781950
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-start-of-layout",
+					"objectClass": "System",
+					"sid": 962402014202718
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 122253426062455,
+					"parameters": {
+						"layer": "\"Maps\"",
+						"visibility": "invisible"
+					}
+				}
+			],
+			"sid": 912603248309601
+		},
+		{
+			"eventType": "block",
+			"conditions": [
+				{
+					"id": "on-key-pressed",
+					"objectClass": "Keyboard",
+					"sid": 961500600900225,
+					"parameters": {
+						"key": 32
+					}
+				}
+			],
+			"actions": [
+				{
+					"id": "set-layer-visible",
+					"objectClass": "System",
+					"sid": 550656761986329,
+					"parameters": {
+						"layer": "\"Maps\"",
+						"visibility": "visible"
+					}
+				}
+			],
+			"sid": 559556430547275
 		}
 	],
 	"sid": 496870461158164

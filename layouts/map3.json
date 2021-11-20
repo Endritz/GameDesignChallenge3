@@ -807,7 +807,7 @@
 					"behaviors": {
 						"Platform": {
 							"properties": {
-								"max-speed": 330,
+								"max-speed": 350,
 								"acceleration": 1500,
 								"deceleration": 1500,
 								"jump-strength": 800,
