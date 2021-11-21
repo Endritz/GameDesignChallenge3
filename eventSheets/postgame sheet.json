@@ -25,6 +25,33 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "Winner",
+					"sid": 830732214584853,
+					"parameters": {
+						"x": "154",
+						"y": "48"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Player1_Final",
+					"sid": 457896898996089,
+					"parameters": {
+						"x": "202",
+						"y": "132"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Player2_Final",
+					"sid": 158967359039083,
+					"parameters": {
+						"x": "523",
+						"y": "132"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Player1_Final",
 					"sid": 178364055570434,
@@ -68,6 +95,33 @@
 					}
 				},
 				{
+					"id": "set-position",
+					"objectClass": "Winner",
+					"sid": 145720229947358,
+					"parameters": {
+						"x": "154",
+						"y": "48"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Player1_Final",
+					"sid": 517656496942601,
+					"parameters": {
+						"x": "202",
+						"y": "132"
+					}
+				},
+				{
+					"id": "set-position",
+					"objectClass": "Player2_Final",
+					"sid": 129521626888778,
+					"parameters": {
+						"x": "523",
+						"y": "132"
+					}
+				},
+				{
 					"id": "set-text",
 					"objectClass": "Player1_Final",
 					"sid": 701903513548972,
@@ -107,6 +161,20 @@
 					"parameters": {
 						"layout": "Title"
 					}
+				},
+				{
+					"id": "set-eventvar-value",
+					"objectClass": "System",
+					"sid": 598590842863994,
+					"parameters": {
+						"variable": "Countdown",
+						"value": "TimeLimit"
+					}
+				},
+				{
+					"id": "restart-layout",
+					"objectClass": "System",
+					"sid": 852243525532514
 				}
 			],
 			"sid": 540412395344009

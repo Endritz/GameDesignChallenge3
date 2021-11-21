@@ -494,8 +494,8 @@
 						}
 					},
 					"world": {
-						"x": 1034,
-						"y": 243,
+						"x": 989,
+						"y": 277,
 						"width": 312,
 						"height": 32,
 						"originX": 0,
@@ -566,8 +566,8 @@
 						}
 					},
 					"world": {
-						"x": 1419,
-						"y": 206,
+						"x": 1440,
+						"y": 232,
 						"width": 292,
 						"height": 32,
 						"originX": 0,
@@ -1483,6 +1483,41 @@
 						"x": 232,
 						"y": 167,
 						"width": 227,
+						"height": 32,
+						"originX": 0.5,
+						"originY": 0.5,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "JumpThroughBlock",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Animation 1",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 288,
+					"instanceVariables": {},
+					"behaviors": {
+						"Jumpthru": {
+							"properties": {
+								"enabled": true
+							}
+						}
+					},
+					"world": {
+						"x": 1812,
+						"y": 332,
+						"width": 165,
 						"height": 32,
 						"originX": 0.5,
 						"originY": 0.5,
