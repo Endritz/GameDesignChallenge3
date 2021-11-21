@@ -8697,7 +8697,7 @@
 					"properties": {
 						"text": "Text",
 						"enable-bbcode": true,
-						"font": "Lucida Calligraphy",
+						"font": "Impact",
 						"size": 36,
 						"line-height": 0,
 						"bold": false,
