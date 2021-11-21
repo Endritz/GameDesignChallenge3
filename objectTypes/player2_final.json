@@ -2,7 +2,7 @@
 	"name": "Player2_Final",
 	"plugin-id": "Text",
 	"sid": 290987606751770,
-	"isGlobal": true,
+	"isGlobal": false,
 	"instanceVariables": [],
 	"behaviorTypes": [],
 	"effectTypes": []

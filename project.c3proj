@@ -139,7 +139,8 @@
 			"Player1_Final",
 			"Player2_Final",
 			"Teleport1",
-			"Teleport2"
+			"Teleport2",
+			"MusicName"
 		],
 		"subfolders": []
 	},
@@ -193,6 +194,11 @@
 					"name": "Virtual Storm (BA).webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 707970795255054
+				},
+				{
+					"name": "Crossfire (BA).webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 542522980160383
 				}
 			],
 			"subfolders": []

@@ -3,6 +3,16 @@
 	"events": [
 		{
 			"eventType": "variable",
+			"name": "TimeLimit",
+			"type": "number",
+			"initialValue": "11",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 430411036848675
+		},
+		{
+			"eventType": "variable",
 			"name": "DistanceBetweenPlayers",
 			"type": "number",
 			"initialValue": "0",
@@ -33,7 +43,7 @@
 		},
 		{
 			"eventType": "variable",
-			"name": "Time1",
+			"name": "Timer",
 			"type": "number",
 			"initialValue": "10",
 			"comment": "",
@@ -351,15 +361,6 @@
 		{
 			"eventType": "group",
 			"disabled": false,
-			"title": "Music",
-			"description": "",
-			"isActiveOnStart": true,
-			"children": [],
-			"sid": 833630681467959
-		},
-		{
-			"eventType": "group",
-			"disabled": false,
 			"title": "GameStart",
 			"description": "",
 			"isActiveOnStart": true,
@@ -380,6 +381,15 @@
 							"sid": 230416081052457,
 							"parameters": {
 								"variable": "Player1_Score",
+								"value": "0"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 745023076621841,
+							"parameters": {
+								"variable": "Player2_Score",
 								"value": "0"
 							}
 						},
@@ -427,6 +437,15 @@
 							}
 						},
 						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 596369093507074,
+							"parameters": {
+								"key": "\"Song3\"",
+								"value": "\"Crossfire (BA)\""
+							}
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 738457630710316,
@@ -440,20 +459,20 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 961753005796004,
+							"sid": 581384198414129,
 							"parameters": {
 								"variable": "CurrentList",
-								"value": "floor(random(0,3))"
+								"value": "floor(random(0,4))"
 							}
 						},
 						{
 							"id": "play-by-name",
 							"objectClass": "Audio",
-							"sid": 516973808515666,
+							"sid": 862709243047835,
 							"parameters": {
 								"folder": "sounds",
 								"audio-file-name": "Dictionary.Get(\"Song\"&CurrentList)",
-								"loop": "not-looping",
+								"loop": "looping",
 								"volume": "-15",
 								"tag-optional": "\"\""
 							}
@@ -514,19 +533,10 @@
 						{
 							"id": "set-eventvar-value",
 							"objectClass": "System",
-							"sid": 181843429378719,
-							"parameters": {
-								"variable": "Player2_Score",
-								"value": "0"
-							}
-						},
-						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 714645948125250,
+							"sid": 480454939614611,
 							"parameters": {
 								"variable": "Countdown",
-								"value": "181"
+								"value": "TimeLimit"
 							}
 						}
 					],
