@@ -513,6 +513,15 @@
 							}
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 783044155871486,
+							"parameters": {
+								"variable": "Player2_Score",
+								"value": "0"
+							}
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "Player2",
 							"sid": 783974078058686,
