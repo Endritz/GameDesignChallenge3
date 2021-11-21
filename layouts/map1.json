@@ -24,10 +24,10 @@
 						}
 					},
 					"world": {
-						"x": 974,
-						"y": 994,
-						"width": 1919,
-						"height": 1276,
+						"x": 973.6167120488667,
+						"y": 985.7334688640622,
+						"width": 1882.966799092605,
+						"height": 1236.0014915798017,
 						"originX": 0.5079365079365079,
 						"originY": 0.7817460317460317,
 						"color": [
@@ -124,8 +124,8 @@
 					"instanceVariables": {},
 					"behaviors": {},
 					"world": {
-						"x": 15,
-						"y": 275,
+						"x": 25,
+						"y": 256,
 						"width": 1870,
 						"height": 726,
 						"originX": 0,
@@ -8680,6 +8680,48 @@
 						"y": 120,
 						"width": 200,
 						"height": 30,
+						"originX": 0,
+						"originY": 0,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "MusicName",
+					"properties": {
+						"text": "Text",
+						"enable-bbcode": true,
+						"font": "Lucida Calligraphy",
+						"size": 36,
+						"line-height": 0,
+						"bold": false,
+						"italic": false,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"horizontal-alignment": "left",
+						"vertical-alignment": "top",
+						"wrapping": "word",
+						"initially-visible": true,
+						"origin": "top-left"
+					},
+					"uid": 332,
+					"instanceVariables": {},
+					"behaviors": {},
+					"world": {
+						"x": 1501,
+						"y": -1007,
+						"width": 1537,
+						"height": 67,
 						"originX": 0,
 						"originY": 0,
 						"color": [

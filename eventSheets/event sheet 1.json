@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "TimeLimit",
 			"type": "number",
-			"initialValue": "11",
+			"initialValue": "181",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -279,9 +279,9 @@
 										{
 											"id": "every-x-seconds",
 											"objectClass": "System",
-											"sid": 935920625820821,
+											"sid": 787779686352870,
 											"parameters": {
-												"interval-seconds": "2"
+												"interval-seconds": "1"
 											}
 										}
 									],
@@ -342,10 +342,10 @@
 										{
 											"id": "add-to-eventvar",
 											"objectClass": "System",
-											"sid": 518130798201863,
+											"sid": 253376186429051,
 											"parameters": {
 												"variable": "Player2_Score",
-												"value": "2"
+												"value": "1"
 											}
 										}
 									],
@@ -412,19 +412,19 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 808388767411605,
+							"sid": 106964720451925,
 							"parameters": {
 								"key": "\"Song0\"",
-								"value": "\"GourmetRace - Copy\""
+								"value": "\"Gourmet Race\""
 							}
 						},
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 263250771229432,
+							"sid": 101217817562210,
 							"parameters": {
 								"key": "\"Song1\"",
-								"value": "\"Battle2\""
+								"value": "\"Emotional Catharsis\""
 							}
 						},
 						{
@@ -439,10 +439,10 @@
 						{
 							"id": "add-key",
 							"objectClass": "Dictionary",
-							"sid": 596369093507074,
+							"sid": 774697553470079,
 							"parameters": {
 								"key": "\"Song3\"",
-								"value": "\"Crossfire (BA)\""
+								"value": "\"Crossfire (BA) Ext\""
 							}
 						},
 						{
@@ -475,6 +475,26 @@
 								"loop": "looping",
 								"volume": "-15",
 								"tag-optional": "\"\""
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 533439466542550,
+							"parameters": {
+								"object-to-create": "MusicName",
+								"layer": "0",
+								"x": "-180",
+								"y": "-170",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "MusicName",
+							"sid": 403204672223760,
+							"parameters": {
+								"text": "Dictionary.Get(\"Song\"&CurrentList)"
 							}
 						},
 						{
@@ -513,13 +533,17 @@
 							}
 						},
 						{
-							"id": "set-eventvar-value",
-							"objectClass": "System",
-							"sid": 783044155871486,
+							"id": "set-text",
+							"objectClass": "Player2_Score",
+							"sid": 378380241931158,
 							"parameters": {
-								"variable": "Player2_Score",
-								"value": "0"
+								"text": "Player2_Score"
 							}
+						},
+						{
+							"id": "destroy",
+							"objectClass": "MusicName",
+							"sid": 307314260999648
 						},
 						{
 							"id": "set-ignoring-input",
@@ -817,15 +841,6 @@
 							}
 						},
 						{
-							"id": "add-to-eventvar",
-							"objectClass": "System",
-							"sid": 862385537696969,
-							"parameters": {
-								"variable": "Player2_Score",
-								"value": "1"
-							}
-						},
-						{
 							"id": "set-text",
 							"objectClass": "Player2_Score",
 							"sid": 843659167910144,
@@ -839,6 +854,15 @@
 							"sid": 725160973914024,
 							"parameters": {
 								"text": "Countdown"
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 424048197228835,
+							"parameters": {
+								"variable": "Player2_Score",
+								"value": "1"
 							}
 						}
 					],

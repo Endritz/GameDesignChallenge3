@@ -176,7 +176,7 @@
 		"sound": {
 			"items": [
 				{
-					"name": "GourmetRace - Copy.ogg",
+					"name": "Gourmet Race.ogg",
 					"type": "audio/ogg; codecs=vorbis",
 					"sid": 129703567540459
 				},
@@ -186,7 +186,7 @@
 					"sid": 836543120090300
 				},
 				{
-					"name": "Battle2.webm",
+					"name": "Emotional Catharsis.webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 965477612557230
 				},
@@ -199,6 +199,11 @@
 					"name": "Crossfire (BA).webm",
 					"type": "audio/webm; codecs=opus",
 					"sid": 542522980160383
+				},
+				{
+					"name": "Crossfire (BA) Ext.webm",
+					"type": "audio/webm; codecs=opus",
+					"sid": 536341237628071
 				}
 			],
 			"subfolders": []
