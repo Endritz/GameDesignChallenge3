@@ -546,117 +546,227 @@
 			"sid": 443340642837280
 		},
 		{
-			"eventType": "block",
-			"conditions": [
+			"eventType": "group",
+			"disabled": false,
+			"title": "Player Interactions",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
 				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player1",
-					"sid": 148450738460864,
-					"parameters": {
-						"object": "Player2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "destroy",
-					"objectClass": "Player1",
-					"sid": 156168807845240
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player1",
+							"sid": 770798391118943,
+							"parameters": {
+								"object": "Player2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "destroy",
+							"objectClass": "Player1",
+							"sid": 453620511233992
+						},
+						{
+							"id": "destroy",
+							"objectClass": "Player2",
+							"sid": 291677910122691
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 144352207727239,
+							"parameters": {
+								"object-to-create": "Player2",
+								"layer": "0",
+								"x": "1559",
+								"y": "176",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "create-object",
+							"objectClass": "System",
+							"sid": 771711107720481,
+							"parameters": {
+								"object-to-create": "Player1",
+								"layer": "0",
+								"x": "279",
+								"y": "1069",
+								"create-hierarchy": false
+							}
+						},
+						{
+							"id": "add-to-eventvar",
+							"objectClass": "System",
+							"sid": 180728062875473,
+							"parameters": {
+								"variable": "Player1_Score",
+								"value": "25"
+							}
+						},
+						{
+							"id": "set-text",
+							"objectClass": "Player1_Score",
+							"sid": 687858798291553,
+							"parameters": {
+								"text": "Player1_Score"
+							}
+						}
+					],
+					"sid": 651323521526994
 				},
 				{
-					"id": "destroy",
-					"objectClass": "Player2",
-					"sid": 600247760940467
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player1",
+							"sid": 330013639427006,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player1_Score",
+							"sid": 450865376327770,
+							"parameters": {
+								"x": "Player1.X - 10",
+								"y": "Player1.Y - 50"
+							}
+						}
+					],
+					"sid": 987664524550280
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 151852696232953,
-					"parameters": {
-						"object-to-create": "Player2",
-						"layer": "0",
-						"x": "1559",
-						"y": "176",
-						"create-hierarchy": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "is-moving",
+							"objectClass": "Player2",
+							"sid": 803380749815470,
+							"behaviorType": "Platform"
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player2_Score",
+							"sid": 454771774362804,
+							"parameters": {
+								"x": "Player2.X - 10",
+								"y": "Player2.Y - 50"
+							}
+						}
+					],
+					"sid": 582266159323694
 				},
 				{
-					"id": "create-object",
-					"objectClass": "System",
-					"sid": 520885715716585,
-					"parameters": {
-						"object-to-create": "Player1",
-						"layer": "0",
-						"x": "279",
-						"y": "1069",
-						"create-hierarchy": false
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player1",
+							"sid": 453463064907816,
+							"parameters": {
+								"object": "Teleport1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player1",
+							"sid": 893052203953218,
+							"parameters": {
+								"x": "Teleport2.X-50",
+								"y": "Teleport2.Y"
+							}
+						}
+					],
+					"sid": 633323652298860
 				},
 				{
-					"id": "add-to-eventvar",
-					"objectClass": "System",
-					"sid": 369354023308649,
-					"parameters": {
-						"variable": "Player1_Score",
-						"value": "25"
-					}
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player1",
+							"sid": 375679293300509,
+							"parameters": {
+								"object": "Teleport2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player1",
+							"sid": 881152432058673,
+							"parameters": {
+								"x": "Teleport1.X+50",
+								"y": "Teleport1.Y + 10"
+							}
+						}
+					],
+					"sid": 796434164709811
 				},
 				{
-					"id": "set-text",
-					"objectClass": "Player1_Score",
-					"sid": 954756458992535,
-					"parameters": {
-						"text": "Player1_Score"
-					}
-				}
-			],
-			"sid": 974411745266041
-		},
-		{
-			"eventType": "block",
-			"conditions": [
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 881675167324375,
+							"parameters": {
+								"object": "Teleport1"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player2",
+							"sid": 393661923969136,
+							"parameters": {
+								"x": "Teleport2.X-50",
+								"y": "Teleport2.Y"
+							}
+						}
+					],
+					"sid": 208365794991070
+				},
 				{
-					"id": "is-moving",
-					"objectClass": "Player1",
-					"sid": 318218021933847,
-					"behaviorType": "Platform"
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "on-collision-with-another-object",
+							"objectClass": "Player2",
+							"sid": 503614809437411,
+							"parameters": {
+								"object": "Teleport2"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-position",
+							"objectClass": "Player2",
+							"sid": 919728263363826,
+							"parameters": {
+								"x": "Teleport1.X+50",
+								"y": "Teleport1.Y + 10"
+							}
+						}
+					],
+					"sid": 869816950009467
 				}
 			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player1_Score",
-					"sid": 713653520614696,
-					"parameters": {
-						"x": "Player1.X - 10",
-						"y": "Player1.Y - 50"
-					}
-				}
-			],
-			"sid": 481011709677902
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "is-moving",
-					"objectClass": "Player2",
-					"sid": 460314163666482,
-					"behaviorType": "Platform"
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player2_Score",
-					"sid": 876878922045041,
-					"parameters": {
-						"x": "Player2.X - 10",
-						"y": "Player2.Y - 50"
-					}
-				}
-			],
-			"sid": 362232326446008
+			"sid": 257856364874532
 		},
 		{
 			"eventType": "block",
@@ -757,106 +867,6 @@
 				}
 			],
 			"sid": 633100529861745
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player1",
-					"sid": 821399154818382,
-					"parameters": {
-						"object": "Teleport1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player1",
-					"sid": 385992404258313,
-					"parameters": {
-						"x": "Teleport2.X-50",
-						"y": "Teleport2.Y"
-					}
-				}
-			],
-			"sid": 840396962839383
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player1",
-					"sid": 601364982084139,
-					"parameters": {
-						"object": "Teleport2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player1",
-					"sid": 933236438749682,
-					"parameters": {
-						"x": "Teleport1.X+50",
-						"y": "Teleport1.Y + 10"
-					}
-				}
-			],
-			"sid": 119044746015181
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player2",
-					"sid": 581592483028384,
-					"parameters": {
-						"object": "Teleport1"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player2",
-					"sid": 358856247790079,
-					"parameters": {
-						"x": "Teleport2.X-50",
-						"y": "Teleport2.Y"
-					}
-				}
-			],
-			"sid": 343923575997342
-		},
-		{
-			"eventType": "block",
-			"conditions": [
-				{
-					"id": "on-collision-with-another-object",
-					"objectClass": "Player2",
-					"sid": 745552323240429,
-					"parameters": {
-						"object": "Teleport2"
-					}
-				}
-			],
-			"actions": [
-				{
-					"id": "set-position",
-					"objectClass": "Player2",
-					"sid": 418968025100853,
-					"parameters": {
-						"x": "Teleport1.X+50",
-						"y": "Teleport1.Y + 10"
-					}
-				}
-			],
-			"sid": 424475108732038
 		}
 	],
 	"sid": 764309225960778
