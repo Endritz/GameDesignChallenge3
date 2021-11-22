@@ -8106,8 +8106,8 @@
 						}
 					},
 					"world": {
-						"x": 108,
-						"y": 831,
+						"x": 105,
+						"y": 761,
 						"width": 72,
 						"height": 32,
 						"originX": 0,
@@ -8430,8 +8430,8 @@
 						}
 					},
 					"world": {
-						"x": 94,
-						"y": 449,
+						"x": 97,
+						"y": 533,
 						"width": 92,
 						"height": 32,
 						"originX": 0,
@@ -8973,7 +8973,7 @@
 						"x": 1217,
 						"y": 1199,
 						"width": 32,
-						"height": 141,
+						"height": 112,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -9009,7 +9009,7 @@
 						"x": 1587,
 						"y": 1198,
 						"width": 32,
-						"height": 137,
+						"height": 113,
 						"originX": 0,
 						"originY": 1,
 						"color": [
@@ -9042,8 +9042,8 @@
 						}
 					},
 					"world": {
-						"x": 1217,
-						"y": 1078,
+						"x": 1219,
+						"y": 1116,
 						"width": 149,
 						"height": 32,
 						"originX": 0,
@@ -9079,7 +9079,7 @@
 					},
 					"world": {
 						"x": 1461,
-						"y": 1077,
+						"y": 1116,
 						"width": 158,
 						"height": 32,
 						"originX": 0,
@@ -9309,6 +9309,78 @@
 						"x": 767,
 						"y": 188,
 						"width": 193,
+						"height": 32,
+						"originX": 0,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Block",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 334,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 98,
+						"y": 263,
+						"width": 92,
+						"height": 32,
+						"originX": 0,
+						"originY": 1,
+						"color": [
+							1,
+							1,
+							1,
+							1
+						],
+						"angle": 0,
+						"zElevation": 0
+					}
+				},
+				{
+					"type": "Block",
+					"properties": {
+						"initially-visible": true,
+						"initial-animation": "Default",
+						"initial-frame": 0,
+						"enable-collisions": true,
+						"live-preview": false
+					},
+					"uid": 335,
+					"instanceVariables": {},
+					"behaviors": {
+						"Solid": {
+							"properties": {
+								"enabled": true,
+								"tags": ""
+							}
+						}
+					},
+					"world": {
+						"x": 100,
+						"y": 952,
+						"width": 92,
 						"height": 32,
 						"originX": 0,
 						"originY": 1,
