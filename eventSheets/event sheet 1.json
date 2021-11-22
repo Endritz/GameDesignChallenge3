@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "TimeLimit",
 			"type": "number",
-			"initialValue": "181",
+			"initialValue": "31",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
@@ -446,6 +446,33 @@
 							}
 						},
 						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 265558062030541,
+							"parameters": {
+								"key": "\"YSpawn0\"",
+								"value": "1050"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 487264454096719,
+							"parameters": {
+								"key": "\"YSpawn1\"",
+								"value": "650"
+							}
+						},
+						{
+							"id": "add-key",
+							"objectClass": "Dictionary",
+							"sid": 368762601946853,
+							"parameters": {
+								"key": "\"YSpawn2\"",
+								"value": "156"
+							}
+						},
+						{
 							"id": "play",
 							"objectClass": "Audio",
 							"sid": 738457630710316,
@@ -609,26 +636,35 @@
 							"sid": 291677910122691
 						},
 						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 454313479993145,
+							"parameters": {
+								"variable": "Spawn",
+								"value": "floor(random(0,3))"
+							}
+						},
+						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 144352207727239,
+							"sid": 193956460887489,
 							"parameters": {
 								"object-to-create": "Player2",
 								"layer": "0",
 								"x": "1559",
-								"y": "176",
+								"y": "Dictionary.Get(\"YSpawn\"&Spawn)",
 								"create-hierarchy": false
 							}
 						},
 						{
 							"id": "create-object",
 							"objectClass": "System",
-							"sid": 771711107720481,
+							"sid": 456877447752269,
 							"parameters": {
 								"object-to-create": "Player1",
 								"layer": "0",
 								"x": "279",
-								"y": "1069",
+								"y": "Dictionary.Get(\"YSpawn\"&Spawn)",
 								"create-hierarchy": false
 							}
 						},
