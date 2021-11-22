@@ -5,7 +5,7 @@
 			"eventType": "variable",
 			"name": "TimeLimit",
 			"type": "number",
-			"initialValue": "31",
+			"initialValue": "181",
 			"comment": "",
 			"isStatic": false,
 			"isConstant": false,
