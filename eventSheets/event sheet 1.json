@@ -82,6 +82,16 @@
 			"sid": 122800944959725
 		},
 		{
+			"eventType": "variable",
+			"name": "Catchup",
+			"type": "number",
+			"initialValue": "0",
+			"comment": "",
+			"isStatic": false,
+			"isConstant": false,
+			"sid": 603727053783673
+		},
+		{
 			"eventType": "group",
 			"disabled": false,
 			"title": "Player 2 Control",
@@ -534,6 +544,14 @@
 							}
 						},
 						{
+							"id": "set-animation-frame",
+							"objectClass": "Player1",
+							"sid": 316538582209315,
+							"parameters": {
+								"frame-number": "0"
+							}
+						},
+						{
 							"id": "set-ignoring-input",
 							"objectClass": "Player2",
 							"sid": 939916429092961,
@@ -565,6 +583,15 @@
 							"sid": 378380241931158,
 							"parameters": {
 								"text": "Player2_Score"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 614283260533361,
+							"parameters": {
+								"variable": "Player2_Score",
+								"value": "0"
 							}
 						},
 						{
@@ -936,6 +963,150 @@
 				}
 			],
 			"sid": 633100529861745
+		},
+		{
+			"eventType": "group",
+			"disabled": false,
+			"title": "Catchup Mechanic",
+			"description": "",
+			"isActiveOnStart": true,
+			"children": [
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "compare-two-values",
+							"objectClass": "System",
+							"sid": 904222577745811,
+							"parameters": {
+								"first-value": "Player2_Score",
+								"comparison": 5,
+								"second-value": "Player1_Score+50"
+							}
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player1",
+							"sid": 362417054926510,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "400"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Player1",
+							"sid": 649744671499063,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "5000"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player1",
+							"sid": 562152013687101,
+							"parameters": {
+								"animation": "\"Catchup\"",
+								"from": "beginning"
+							}
+						}
+					],
+					"sid": 102615361404456,
+					"children": [
+						{
+							"eventType": "block",
+							"conditions": [
+								{
+									"id": "compare-two-values",
+									"objectClass": "System",
+									"sid": 860576750811414,
+									"parameters": {
+										"first-value": "Catchup",
+										"comparison": 0,
+										"second-value": "0"
+									}
+								}
+							],
+							"actions": [
+								{
+									"id": "play",
+									"objectClass": "Audio",
+									"sid": 146709870012873,
+									"parameters": {
+										"audio-file": "Chargeup",
+										"loop": "not-looping",
+										"volume": "-10",
+										"tag-optional": "\"\""
+									}
+								},
+								{
+									"id": "set-eventvar-value",
+									"objectClass": "System",
+									"sid": 502278786581964,
+									"parameters": {
+										"variable": "Catchup",
+										"value": "1"
+									}
+								}
+							],
+							"sid": 533596238419309
+						}
+					]
+				},
+				{
+					"eventType": "block",
+					"conditions": [
+						{
+							"id": "else",
+							"objectClass": "System",
+							"sid": 830653676269516
+						}
+					],
+					"actions": [
+						{
+							"id": "set-max-speed",
+							"objectClass": "Player1",
+							"sid": 242978909009962,
+							"behaviorType": "Platform",
+							"parameters": {
+								"max-speed": "350"
+							}
+						},
+						{
+							"id": "set-acceleration",
+							"objectClass": "Player1",
+							"sid": 255401654705920,
+							"behaviorType": "Platform",
+							"parameters": {
+								"acceleration": "1500"
+							}
+						},
+						{
+							"id": "set-animation",
+							"objectClass": "Player1",
+							"sid": 867159617357500,
+							"parameters": {
+								"animation": "\"Default\"",
+								"from": "beginning"
+							}
+						},
+						{
+							"id": "set-eventvar-value",
+							"objectClass": "System",
+							"sid": 297445747560914,
+							"parameters": {
+								"variable": "Catchup",
+								"value": "0"
+							}
+						}
+					],
+					"sid": 213533623971503
+				}
+			],
+			"sid": 792598828187112
 		}
 	],
 	"sid": 764309225960778
